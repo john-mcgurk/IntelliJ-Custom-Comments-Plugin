@@ -2,7 +2,7 @@
 
 This is a Git Repo for development of prototype solution to the issue 'How might we make
 commenting an enjoyable part of software development, whilst assuring quality of comments
-in code', as part of a QUB module in November 2020.
+in code', as part of a QUB module in __November 2020__.
 
 The goal of this solution is to offer a plugin in IntelliJ that will standardize current
 comments, auto-generate recommended comments, and posted all comments to a GitWiki to be
@@ -10,11 +10,11 @@ used as a resource for a team of developers.
 
 # Development History
 
-Prototype #1 - A coding solution for a plugin to allow IntelliJ users to search selected text in Google.
+__Prototype #1__ _(17.11.20)_ - A coding solution for a plugin to allow IntelliJ users to search selected text in Google.
 
-Prototype #2 (21.11.20) - Comment refactoring tool that recognizes comments and prints to command line.
+__Prototype #2__ _(21.11.20)_ - Comment refactoring tool that recognizes comments and prints to command line.
 
-Final Prototype - 'Read Comments' scans current class and suggests comments to improve readability. 'Generate new Comments' will add the approved comments into the class. 'Write Documentation' will generate txt files that could feasibly be used in a GitWiki for an entire codebase.
+__Final Prototype__ _(30.11.20)_ - 'Read Comments' scans current class and suggests comments to improve readability. 'Generate new Comments' will add the approved comments into the class. 'Write Documentation' will generate txt files that could feasibly be used in a GitWiki for an entire codebase.
 
 # Future Propositions
 
