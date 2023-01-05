@@ -1,0 +1,41 @@
+<idea-plugin>
+    <id>org.CommentPlugin</id>
+    <name>Comment Helper</name>
+    <vendor>John McGurk</vendor>
+
+    <description>
+      An extension for IntelliJ IDEA to better improve readability and documentation of a code base.
+    </description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action
+                id="CommentRefactor.CommentPlugin.ToolsMenu"
+                class="ReadCommentsAction"
+                text="Refactor Current Comments"
+                description="Standardize current class comments">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action
+                id="CommentGeneration.CommentPlugin.ToolsMenu"
+                class="GenerateNewCommentsAction"
+                text="Generate New Comments"
+                description="Generate suggested comments action">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action
+                id="UpdateGitDoc.CommentPlugin.ToolsMenu"
+                class="UpdateGitDocumentation"
+                text="Update Git Documentation"
+                description="Update git wiki documentation action">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

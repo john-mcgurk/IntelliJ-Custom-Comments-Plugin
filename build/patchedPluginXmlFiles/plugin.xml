@@ -1,0 +1,26 @@
+<idea-plugin>
+  <version>1.0</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="202.7319" until-build="202.*"/>
+  <id>org.CommentPlugin</id>
+  <name>Comment Helper</name>
+  <vendor>MacroSoft</vendor>
+  <description>
+        My testing of the new description feature to describe my plugin
+    </description>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij"/>
+  <actions>
+    <action id="CommentRefactor.CommentPlugin.ToolsMenu" class="ReadCommentsAction" text="Refactor Current Comments" description="Standardize current class comments">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+    <action id="CommentGeneration.CommentPlugin.ToolsMenu" class="GenerateNewCommentsAction" text="Generate New Comments" description="Generate suggested comments action">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+    <action id="UpdateGitDoc.CommentPlugin.ToolsMenu" class="UpdateGitDocumentation" text="Update Git Documentation" description="Update git wiki documentation action">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+  </actions>
+</idea-plugin>
